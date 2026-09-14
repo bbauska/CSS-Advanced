@@ -1,11 +1,26 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ README.md of CSS-Advanced for Adv-CSS.bauska.org ~~~~~~~~~~~~~~~~~~~~~-->
 <h1>CSS-Advanced</h1>
+<p>Folling is left frozen column</p>
+Table of Contents
+What is Advanced CSS?
+Why is Advanced CSS Important?
+CSS Pseudo classes
+CSS Pseudo elements
+CSS Z-Index
+What is CSS User Interface?
+CSS Blend modes
+CSS Transitions and animations
+Browser Compatibility of Advanced CSS
+Advanced CSS Best practices
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="https://www.browserstack.com/guide/advanced-css-tutorial">from Browserstack's Advanced CSS Tutorial</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Tips, tricks, techniques used in advanced CSS methodologies.</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ README.md of CSS-Advanced for Adv-CSS.bauska.org ~~~~~~~~~~~~~~~~~~~~~-->
+<p>Advanced CSS is the backbone of modern web design, enabling developers to go beyond basic styling and create dynamic, responsive, and visually appealing websites. It involves powerful techniques such as pseudo-classes, transitions, blend modes, and animations — all aimed at improving user experience and performance.</p>
+<h2>Overview</h2>
 <ul>
   <li>1. What is Advanced CSS in Web Development?
     <ul>
@@ -17,25 +32,25 @@
   </li>
   <li>2. Why is Advanced CSS Important for Modern Websites?
     <ul>
-      <li><p>Enhanced Interactivity: Enables hover effects, focus states, and transitions for smoother user experiences.</p></li>
-	  <li><p>Improved Layouts: Tools like Flexbox and Grid reduce reliance on JavaScript for responsive designs.</p></li>
-      <li><p>Better Performance: Cleaner, modular code with reduced duplication improves maintainability.</p></li>
-      <li><p>Future-Proof Design: Ensures compatibility with evolving browser capabilities and design standards.</p></li>
+      <li><p><em>Enhanced Interactivity</em>: Enables hover effects, focus states, and transitions for smoother user experiences.</p></li>
+	  <li><p><em>Improved Layouts</em>: Tools like Flexbox and Grid reduce reliance on JavaScript for responsive designs.</p></li>
+      <li><p><em>Better Performance</em>: Cleaner, modular code with reduced duplication improves maintainability.</p></li>
+      <li><p><em>Future-Proof Design</em>: Ensures compatibility with evolving browser capabilities and design standards.</p></li>
 	</ul>
   </li>
   <li>3. How to Use Advanced CSS Techniques Effectively?
     <ul>
-      <li><p>Pseudo-Classes: Style elements in different states (:hover, :active, :focus, :first-child, :nth-child).</p></li>
-      <li><p>Pseudo-Elements: Target specific parts of an element (::before, ::after, ::first-letter) for refined design control.</p></li>
-      <li><p>Transitions & Animations: Add motion and interactivity to elements for a more engaging UI.</p></li>
-	  <li><p>Blend Modes & Z-Index: Create layered effects and manage element stacking for complex visual designs.</p></li>
+      <li><p><em>Pseudo-Classes</em>: Style elements in different states (:hover, :active, :focus, :first-child, :nth-child).</p></li>
+      <li><p><em>Pseudo-Elements</em>: Target specific parts of an element (::before, ::after, ::first-letter) for refined design control.</p></li>
+      <li><p><em>Transitions & Animations</em>: Add motion and interactivity to elements for a more engaging UI.</p></li>
+	  <li><p><em>Blend Modes & Z-Index</em>: Create layered effects and manage element stacking for complex visual designs.</p></li>
 	</ul>
   </li>
   <li>4. Key Best Practices for Writing Advanced CSS
     <ul>
-      <li><p>Use modular and reusable classes to keep code maintainable.</p></li>
-      <li><p>Always test browser compatibility for advanced features.</p></li>
-      <li><p>Leverage CSS variables for consistent styling and easier updates.</p></li>
+      <li><p>Use <em>modular and reusable classes</em> to keep code maintainable.</p></li>
+      <li><p>Always <em>test browser compatibility</em> for advanced features.</p></li>
+      <li><p>Leverage <em>CSS variables</em> for consistent styling and easier updates.</p></li>
       <li><p>Combine advanced CSS with responsive design principles for seamless performance across devices.</p></li>
 	</ul>
   </li>
@@ -47,10 +62,10 @@ practices to follow for scalable, modern web design.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1">What is Advanced CSS?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>As the name suggests, advanced CSS is a set of styling techniques that go beyond a website’s basic styling capabilities 
+<p>As the name suggests, <em>advanced CSS</em> is a set of styling techniques that go beyond a website’s basic styling capabilities 
 such as fonts, colors, margins, and more.</p>
 
-<p>Whereas advanced CSS contains complex and advanced style design features such as pseudo-classes, animations, transitions, 
+<p>Whereas <em>advanced CSS</em> contains complex and advanced style design features such as pseudo-classes, animations, transitions, 
 and more that enhance aesthetics and functionality, ultimately improving the user experience.</p>
 
 <p>Incorporating advanced CSS into your projects enhances a website’s visuals, creates a scalable codebase, and improves its responsiveness.</p>
@@ -62,81 +77,62 @@ and more that enhance aesthetics and functionality, ultimately improving the use
 <p>As the internet evolves, expectations for aesthetics, performance, and responsiveness also increase. Therefore, advanced CSS is important to tackle such a situation and create a future-proof website.</p>
 
 <h3 id="ch1-1">Here are a few reasons why Advanced CSS is essential:</h3>
+<ul>
+  <li>Techniques such as Flexbox and CSS Grid reduce the dependency upon JavaScript and frameworks for creating responsive layouts.</li>
+  <li>It leverages animations and transitions to create a smooth user experience that increases the satisfaction rate of users who visit your websites.</li>
+  <li>Advanced CSS techniques allow for a cleaner codebase, avoid duplication, and are scalable.</li>
+  <li>Advanced CSS techniques also allow you to future-proof your projects by ensuring modern web designs that are adaptable and compatible with evolving browser standards.</li>
+</ul>
+<h3>CSS Pseudo Classes#</h3>
+<p>CSS Pseudo Classes are a set of keywords that are used along <a href="https://www.browserstack.com/guide/css-selectors-in-selenium">CSS selectors</a> to style a dynamic state of an element.</p>
 
-Techniques such as Flexbox and CSS Grid reduce the dependency upon JavaScript and frameworks for creating responsive layouts.
-It leverages animations and transitions to create a smooth user experience that increases the satisfaction rate of users who visit your websites.
-Advanced CSS techniques allow for a cleaner codebase, avoid duplication, and are scalable.
-Advanced CSS techniques also allow you to future-proof your projects by ensuring modern web designs that are adaptable and compatible with evolving browser standards.
-CSS Pseudo Classes#
-CSS Pseudo Classes are a set of keywords that are used along CSS selectors to style a dynamic state of an element.
+<p>For example, you want to design a button. However, you want to ensure a slightly different design when the mouse hovers over the button and when it is clicked. In situations where you want to style the dynamic conditions of an element, <em>pseudo-classes</em> are used.</p>
 
-For example, you want to design a button. However, you want to ensure a slightly different design when the mouse hovers over the button and when it is clicked. In situations where you want to style the dynamic conditions of an element, pseudo-classes are used.
+<p>A pseudo-class consists of a <em>colon (:)</em> followed by the <em>pseudo-class name</em> (e.g., hover) and is attached to <em>anchor element</em> (e.g., button in case button: hover).</p>
 
-A pseudo-class consists of a colon (:) followed by the pseudo-class name (e.g., hover) and is attached to anchor element (e.g., button in case button: hover).
+<h4>Hover pseudo class</h4>
+<p>The hover pseudo-class applies styles when the mouse hovers over an element.</p>
 
-Hover pseudo class
-The hover pseudo-class applies styles when the mouse hovers over an element.
-
-Syntax:
+<h4>Syntax:</h4>
 ```
 selector:hover {
-    /* styles */
-  }
+  /* styles */
+}
 ```
-Example:
+<h4>Example:</h4>
 
-Consider an example where a button is created, and the pseudo-class is used to change its appearance when hovered.
+<p>Consider an example where a button is created, and the pseudo-class is used to change its appearance when hovered.</p>
 
-Index.html:
+<h4>Index.html:</h4>
 ```
 <!DOCTYPE html>
-
 <html>
-
-<head>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<button class="button">Hover me</button>
-
-</body>
-
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button class="button">Hover me</button>
+  </body>
 </html>
 ```
-Style.css:
+<h4>Style.css:</h4>
 ```
-.button{
-
-    background-color: blue;
-
-    border-radius: 8px;
-
-    border-style: none;
-
-    color: white;
-
-    cursor: pointer;
-
-    font-family: sans-serif;
-
-    font-size: 14px;
-
-    padding: 10px 16px;
-
-    text-align: center;
-
-  }
-
-hover pseudo class
-
+.button {
+  background-color: blue;
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px 16px;
+  text-align: center;
+}
+```
+<h4>hover pseudo class</h4>
+```
 .button:hover{
-
     background-color: red;
-
   }
 ```
 hover pseudo class 2
@@ -544,196 +540,162 @@ Index.html:
 Style.css:
 
 .box {
-
     width: 100px;
-
     height: 100px;
-
     background-color: blue;
-
     transition: background-color 0.3s ease, transform 0.3s ease;
-
   }
-
   .box:hover {
-
     background-color: green;
-
     transform: scale(1.2);
-
   }
+```
 
 translate GIF
 
-CSS Animations Syntax
+<h4>CSS Animations Syntax</h4>
 
 1. @keyframes
-
+```
 @keyframes animation-name {
-
-    0% { /* Starting state */ }
-
-    50% { /* Midpoint state */ }
-
-    100% { /* Ending state */ }
-
+  0% { /* Starting state */ }
+  50% { /* Midpoint state */ }
+  100% { /* Ending state */ }
 }
-
+```
 2. Animation Properties
-
+```
 animation: animation-name duration timing-function delay iteration-count direction;
-
-animation-name: Name of the animation defined by @keyframes.
-duration: duration fo the animation(e.g., 2s).
-timing-function: speed of the animation (ease, linear, ease-in, etc.).
-delay: Time before the animation starts (e.g., 1s).
-iteration-count: Number of times the animation should run (infinite for continuous looping).
-direction: The direction of the animation (normal, reverse, alternate, etc.).
-Example:
+```
+<ul>
+  <li><em>animation-name</em>: Name of the animation defined by @keyframes.</li>
+  <li><em>duration</em>: duration for the animation(e.g., 2s).</li>
+  <li><em>timing-function</em>: speed of the animation (ease, linear, ease-in, etc.).</li>
+  <li><em>delay</em>: Time before the animation starts (e.g., 1s).</li>
+  <li><em>iteration-count</em>: Number of times the animation should run (infinite for continuous looping).</li>
+  <li><em>direction</em>: The direction of the animation (normal, reverse, alternate, etc.).</li>
+</ul>
+<h4>Example:</h4>
 
 A simple example of a box moving horizontally and changing color.
 
-Index.html:
-
+<h4>Index.html:</h4>
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
   <div class="box"></div>
-
 </body>
-
 </html>
-
-Style.css:
-
+```
+<h4>Style.css:</h4>
+```
 .box {
-
-    width: 100px;
-
-    height: 100px;
-
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: moveAndChange 3s ease-in-out infinite alternate;
+}
+@keyframes moveAndChange {
+  0% {
+    left: 0;
     background-color: red;
-
-    position: relative;
-
-    animation: moveAndChange 3s ease-in-out infinite alternate;
-
   }
-
-  @keyframes moveAndChange {
-
-    0% {
-
-      left: 0;
-
-      background-color: red;
-
-    }
-
-    50% {
-
-      left: 150px;
-
-      background-color: green;
-
-    }
-
-    100% {
-
-      left: 300px;
-
-      background-color: blue;
-
-    }
-
+  50% {
+    left: 150px;
+    background-color: green;
   }
+  100% {
+    left: 300px;
+    background-color: blue;
+  }
+}
+```
 
-The animation runs for 3s, with an ease-in-out timing with alternate back and forth and infinite running.
+The animation runs for <b>3s</b>, with an <b>ease-in-out</b> timing with <b>alternate</b> back and forth and <b>infinite</b> running.
 
-At 0%, the box has a red background at the leftmost part.
-At 50%, the box moves 150px right and turns green.
-At 100%, the box moves 300px right and turns blue.
+<ul>
+  <li><em>At 0%</em>, the box has a red background at the leftmost part.</li>
+  <li><em>At 50%</em>, the box moves 150px right and turns green.</li>
+  <li><em>At 100%</em>, the box moves 300px right and turns blue.</li>
+</ul>
+
 After that, it repeats back and forth motion infinitely.
 
 Browser Compatibility of Advanced CSS#
 If you’re using these Advanced CSS techniques in your project, you must understand that although the newer versions of browsers show robust support for these methods and practices, the older versions of popular browsers mostly don’t, which leads to inconsistent behaviour across different platforms.
 
-Browser Compatibility is a crucial factor in determining the success of your website. Therefore, you must perform ample testing on your project before rolling it out to the world to ensure maximum test coverage.
+<a href="https://www.browserstack.com/guide/browser-compatibility-with-css-gradients">Browser Compatibility</a> is a crucial factor in determining the success of your website. Therefore, you must perform ample testing on your project before rolling it out to the world to ensure <a href="https://www.browserstack.com/guide/how-to-ensure-test-coverage">maximum test coverage</a>.
 
 However, setting up a lab of physical devices can be both costly and bothersome.
 
-BrowserStack Responsive Testing Banner
+Image of: BrowserStack Responsive Testing Banner
 
 A great solution is to set up a real device cloud. BrowserStack gives you access to 3500+ browsers and actual device combinations (mobile and desktop), providing wide coverage for Cross Browser & Platform Testing.
 
 You can also save time by leveraging parallel testing on BrowserStack, running tests across multiple browser-device combinations simultaneously. This helps developers and testers create applications that deliver a seamless user experience, enhancing user retention and satisfaction.
 
-Pseudo class support on different browser versions 1
+Image of: Pseudo class support on different browser versions 1
 
-Talk to an Expert
+<a href="https://www.browserstack.com/guide/advanced-css-tutorial#">Talk to an Expert</a>
 
-Here’s an example of pseudo-class support on different browser versions from older to the latest on Can I Use.
+Here’s an example of pseudo-class support on different browser versions from older to the latest on 
+<a href="https://caniuse.com/css-matches-pseudo">Can I Use</a>.
 
-Advanced CSS Best Practices#
+<h3>Advanced CSS Best Practices#</h3>
 The primary concern behind knowing the best practices is to create an efficient code base that is scalable, maintainable, easy to update, and properly structured.
 
 Here are some of the best Advanced CSS practices to maintain healthy and efficient coding:
 
 1. Use CSS variables for reusable values such as fonts, colors, and more.
-
+```
 :root {
-
     --primary-color: #3498db;
-
     --secondary-color: #2ecc71;
-
     --font-size-base: 16px;
-
 }
-
 body {
-
     background-color: var(--primary-color);
-
     font-size: var(--font-size-base);
-
 }
-
 button {
-
     background-color: var(--secondary-color);
-
 }
-
+```
 2. To create layouts, prefer Flexbox and CSS grid as they align with the website’s responsiveness.
 
 3. As the number of mobile users is increasing rapidly, you must consider the mobile-first approach. According to this, you first design the website for mobile and then gradually expand to larger screens. This also creates good responsiveness on your website.
 4. Use animations and transitions appropriately and wisely. Although they enhance user experience, using them extensively slows down your website.
 5. Use CSS Shorthand to make your script more concise, and readable, and reduce the amount of code.
-
+```
 margin-top: 10px;
-
 margin-right: 20px;
-
 margin-bottom: 15px;
-
 margin-left: 30px;
 
 /* Use this */
-
 margin: 10px 20px 15px 30px;
-
+```
 Advanced CSS is a set of techniques that is built upon the foundation of basic CSS. It contains advanced techniques such as pseudo-classes, animations, and transitions that enhance both aesthetics and functionality, ultimately improving the user experience.
 
 Older browser versions don’t support many advanced CSS techniques. Therefore, to ensure maximum coverage, you must perform Cross-Browser Testing before launching your application for real-world users.
 
-Test on Real Devices
+<a href="https://www.browserstack.com/real-device-cloud">Test on Real Devices</a>
+
+<h4>Tags:</h4>
+<ul class="horizontal-list">
+  <li><a href="https://www.browserstack.com/guide/tag/ui-testing">UI Testing</a></li>
+  <li><a href="https://www.browserstack.com/guide/tag/visual-testing">Visual Testing</a></li>
+  <li><a href="https://www.browserstack.com/guide/tag/website-testing">Website Testing</a></li>
+</ul>
+```
+ul.horizontal-list {
+    display: flex;         /* Automatically aligns items in a row */
+    list-style-type: none; 
+    gap: 20px;             /* Easily sets the space between items */
+}
+```
