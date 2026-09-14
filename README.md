@@ -1,31 +1,43 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>CSS-Advanced</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><a href="https://www.browserstack.com/guide/advanced-css-tutorial">from Browserstack's Advanced CSS Tutorial</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Tips, tricks, techniques used in advanced CSS methodologies.</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ README.md of CSS-Advanced for Adv-CSS.bauska.org ~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>1. What is Advanced CSS in Web Development?
-    <p>Advanced CSS refers to complex styling techniques that extend beyond simple properties like colors, 
-      fonts, and margins.</p>
-    <p>It includes features like pseudo-classes, pseudo-elements, transitions, animations, and responsive layouts.
-      These capabilities help developers design engaging, scalable, and future-ready interfaces.</p>
+    <ul>
+      <li><p>Advanced CSS refers to complex styling techniques that extend beyond simple properties like colors, 
+      fonts, and margins.</p></li>
+      <li><p>It includes features like pseudo-classes, pseudo-elements, transitions, animations, and responsive layouts.</p></li>
+      <li>These capabilities help developers design engaging, scalable, and future-ready interfaces.</p></li>
+	</ul>
   </li>
   <li>2. Why is Advanced CSS Important for Modern Websites?
-    <p>Enhanced Interactivity: Enables hover effects, focus states, and transitions for smoother user experiences. 
-	Improved Layouts: Tools like Flexbox and Grid reduce reliance on JavaScript for responsive designs.</p>
-    <p>Better Performance: Cleaner, modular code with reduced duplication improves maintainability.</p>
-    <p>Future-Proof Design: Ensures compatibility with evolving browser capabilities and design standards.</p>
+    <ul>
+      <li><p>Enhanced Interactivity: Enables hover effects, focus states, and transitions for smoother user experiences.</p></li>
+	  <li><p>Improved Layouts: Tools like Flexbox and Grid reduce reliance on JavaScript for responsive designs.</p></li>
+      <li><p>Better Performance: Cleaner, modular code with reduced duplication improves maintainability.</p></li>
+      <li><p>Future-Proof Design: Ensures compatibility with evolving browser capabilities and design standards.</p></li>
+	</ul>
   </li>
   <li>3. How to Use Advanced CSS Techniques Effectively?
-    <p>Pseudo-Classes: Style elements in different states (:hover, :active, :focus, :first-child, :nth-child).</p>
-    <p>Pseudo-Elements: Target specific parts of an element (::before, ::after, ::first-letter) for refined design control.</p>
-    <p>Transitions & Animations: Add motion and interactivity to elements for a more engaging UI.</p>
-	<p>Blend Modes & Z-Index: Create layered effects and manage element stacking for complex visual designs.</p>
+    <ul>
+      <li><p>Pseudo-Classes: Style elements in different states (:hover, :active, :focus, :first-child, :nth-child).</p></li>
+      <li><p>Pseudo-Elements: Target specific parts of an element (::before, ::after, ::first-letter) for refined design control.</p></li>
+      <li><p>Transitions & Animations: Add motion and interactivity to elements for a more engaging UI.</p></li>
+	  <li><p>Blend Modes & Z-Index: Create layered effects and manage element stacking for complex visual designs.</p></li>
+	</ul>
   </li>
   <li>4. Key Best Practices for Writing Advanced CSS
-    <p>Use modular and reusable classes to keep code maintainable.</p>
-    <p>Always test browser compatibility for advanced features.</p>
-    <p>Leverage CSS variables for consistent styling and easier updates.</p>
-    <p>Combine advanced CSS with responsive design principles for seamless performance across devices.</p>
+    <ul>
+      <li><p>Use modular and reusable classes to keep code maintainable.</p></li>
+      <li><p>Always test browser compatibility for advanced features.</p></li>
+      <li><p>Leverage CSS variables for consistent styling and easier updates.</p></li>
+      <li><p>Combine advanced CSS with responsive design principles for seamless performance across devices.</p></li>
+	</ul>
   </li>
 </ul>
 
@@ -43,7 +55,7 @@ and more that enhance aesthetics and functionality, ultimately improving the use
 
 <p>Incorporating advanced CSS into your projects enhances a website’s visuals, creates a scalable codebase, and improves its responsiveness.</p>
 
-<p>Also Read: 10 Core Elements of Modern Web Design</p>
+<cite>Also Read: <a href="https://www.browserstack.com/guide/elements-of-modern-web-design">10 Core Elements of Modern Web Design</a></cite>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2">Why is Advanced CSS Important?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -68,9 +80,7 @@ The hover pseudo-class applies styles when the mouse hovers over an element.
 Syntax:
 ```
 selector:hover {
-
     /* styles */
-
   }
 ```
 Example:
