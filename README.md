@@ -59,7 +59,6 @@ Advanced CSS Best practices
 
 <p>This article explains what advanced CSS is, why it’s essential, how to implement its key techniques, and the best 
 practices to follow for scalable, modern web design.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1">What is Advanced CSS?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -95,16 +94,19 @@ and more that enhance aesthetics and functionality, ultimately improving the use
 <p>The hover pseudo-class applies styles when the mouse hovers over an element.</p>
 
 <h4>Syntax:</h4>
+
 ```
 selector:hover {
   /* styles */
 }
 ```
+
 <h4>Example:</h4>
 
 <p>Consider an example where a button is created, and the pseudo-class is used to change its appearance when hovered.</p>
 
 <h4>Index.html:</h4>
+
 ```
 <!DOCTYPE html>
 <html>
@@ -116,7 +118,9 @@ selector:hover {
   </body>
 </html>
 ```
+
 <h4>Style.css:</h4>
+
 ```
 .button {
   background-color: blue;
@@ -130,53 +134,57 @@ selector:hover {
   text-align: center;
 }
 ```
+
 <h4>hover pseudo class</h4>
+
 ```
 .button:hover{
-    background-color: red;
-  }
+  background-color: red;
+}
 ```
-hover pseudo class 2
 
-Active pseudo class
+<h4>hover pseudo class 2</h4>
+
+<h3>Active pseudo class</h3>
 The active pseudo-class is applied to an element when the user clicks (presses down) an element that has yet to be released.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector:active {
-
-    /* styles */
-
-  }
+  /* styles */
+}
 ```
-Example:
+
+<h4>Example:</h4>
 
 To demonstrate, create a placeholder(input box), which changes its appearance when the user clicks on it.
 
 Note that the effect restores to the original upon releasing the mouse button.
+
 ```
 input {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  /* Styling the placeholder */
-  input::placeholder {
-    color: gray;
-  }
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+/* Styling the placeholder */
+input::placeholder {
+  color: gray;
+}
 ```
 <h4>active pseudo class</h4>
 ```
 input:active::placeholder {
-    color: red;
-  }
-  input:active {
-    border-color: blue;
-    background-color: #f0f8ff;
-    outline: none;
-  }
+  color: red;
+}
+input:active {
+  border-color: blue;
+  background-color: #f0f8ff;
+  outline: none;
+}
 ```
 active pseudo class 2
 
@@ -186,87 +194,92 @@ The first-child and last-child pseudo-classes are used to style the first and la
 Syntax:
 ```
 selector:first-child {
-    /* styles */
-  }
-  selector:last-child {
-    /* styles */
-  }
+  /* styles */
+}
+selector:last-child {
+  /* styles */
+}
 ```
 Example:
 
 To demonstrate, consider a scenario with multiple paragraph elements within a container, where only the first and last paragraphs need to be styled, leaving the rest unchanged.
+
 ```
 <div>
-    <p>This is the first paragraph.</p>
-    <p>This is the second paragraph.</p>
-    <p>This is the last paragraph.</p>
-  </div>
-```
-```
-  <style>
-    p:first-child {
-      color: red;
-    }
-    p:last-child {
-      color: blue;
-    }
-  </style>
+  <p>This is the first paragraph.</p>
+  <p>This is the second paragraph.</p>
+  <p>This is the last paragraph.</p>
+</div>
+<style>
+  p:first-child {
+    color: red;
+  }
+  p:last-child {
+    color: blue;
+  }
+</style>
 
 first child and last child output image
 
-Nth child()
+<h3>Nth child()</h3>
 The nth-child() pseudo-class lets you select elements for styling based on their position with the parent element.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector:nth-child(n) {
-    /* styles */
-  }
+  /* styles */
+}
 ```
 Here, “n” takes values of the position of the children to select. It can take numeric values as well as a keyword such as odd and even.
 
-Example:
+<h4>Example:</h4>
 
 To demonstrate, consider a scenario with multiple paragraph elements within a container, where only the third paragraph needs to be styled while the others remain unchanged.
+
 ```
 <div>
-    <p>This is the first paragraph.</p>
-    <p>This is the middle paragraph.</p>
-    <p>This is the last paragraph.</p>
-  </div>
+  <p>This is the first paragraph.</p>
+  <p>This is the middle paragraph.</p>
+  <p>This is the last paragraph.</p>
+</div>
+<style>
+  p:nth-child(3){
+    color: red;
+  }
+</style>
 ```
-```
-  <style>
-    p:nth-child(3){
-      color: red;
-    }
-  </style>
-```
-Focus
+
+<h4>Focus</h4>
 The focus pseudo-class lets you style elements when an element is focused through keyboard navigation or mouse clicks.
 
 Unlike the active pseudo-class, the mouse can be released and not pressed all the time. It is a helpful technique while designing form elements such as <input>, <textarea>, and <select>.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector:focus {
-    /* styles */
-  }
+  /* styles */
+}
 ```
+
 <h4>Example:</h4>
+
 ```
 input {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  /* Styling the placeholder */
-  input::placeholder {
-    color: gray;
-  }
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+/* Styling the placeholder */
+input::placeholder {
+  color: gray;
+}
 ```
+
 <h4>focus pseudo class e1730537153299</h4>
+
 ```
 input:focus::placeholder {
   color: rgb(60, 0, 255);
@@ -277,34 +290,42 @@ input:focus {
   outline: none;
 }
 ```
-focus pseudo class 2
 
-Target
+<h4>focus pseudo class 2</h4>
+
+<h3>Target</h3>
 The target pseudo-class allows you to style an element when the URL contains a hash (#) followed by the id of that element to be styled. This is often combined with anchor links to show or hide content dynamically.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector:target {
   /* styles */
 }
 ```
+
 Also Read: Top Responsive CSS Frameworks
 
-CSS Pseudo-Elements#
+<h3>CSS Pseudo-Elements#</h3>
+
 Pseudo-elements in CSS are also special keywords in CSS tusing which you can style specific parts of an element without changing the underlying HTML structure. Unlike Pseudo classes that style different states or conditions of an element, the CSS pseudo-elements style part of an element and can also insert, remove, and modify an element without changing the HTML structure.
 
 CSS pseudo-element consists of a double colon (::) followed by the pseudo-element keyword(e.g., h1::before).
 
-First letter pseudo element
+<h4>First letter pseudo element</h4>
+
 The first-letter pseudo-element styles only the first letter of block-level text elements, such as paragraphs, headings, and other text-displaying content. It can’t be used for inline elements as it leverages elements’ ability to break lines for larger text formatting.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector::first-letter {
   /* styles */
 }
 ```
-Example:
+
+<h4>Example:</h4>
+
 ```
 p::first-letter {
   font-size: 3em;  /* Make the first letter 3 times larger */
@@ -314,20 +335,25 @@ p::first-letter {
   margin-right: 5px; /* Add space between the letter and the rest of the text */
 }
 ```
-first letter pseudo element
 
-before Pseudo element
+<h4>first letter pseudo element</h4>
+
+<h4>before Pseudo element</h4>
+
 The before pseudo-element is used to insert content before the content of any element without altering its HTML structure.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector::before {
   /* styles or content */
 }
 ```
-Example:
 
-Index.html:
+<h4>Example:</h4>
+
+<h4>Index.html:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -340,7 +366,9 @@ Index.html:
 </body>
 </html>
 ```
-Style.css:
+
+<h4>Style.css:</h4>
+
 ```
 h1::before {
   content: "★\A ";
@@ -348,7 +376,8 @@ h1::before {
   font-size: 1.5em;
   white-space: pre; }
 ```
-before Pseudo element
+
+<h4>before Pseudo element</h4>
 
 Also Read: How to position text over image using CSS
 
@@ -359,19 +388,22 @@ To place any aspect on top of another, the element must have a z-index value hig
 
 It is used to manage overlapping elements, such as in designing a dropdown, a tooltip, floating elements, dialogue boxes, and more.
 
-Syntax:
+<h4>Syntax:</h4>
+
 ```
 selector {
   z-index: value;
 }
 ```
+
 Here value can take inputs such as a positive number, a negative number, and an auto. Auto is the default value and follows the natural order of elements. Element with a higher value of Z-index will be at the top.
 
-Example:
+<h4>Example:</h4>
 
 In this example, let’s create four boxes and manage their stacking with the help of z-index.
 
-Index.html:
+<h4>Index.html:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -387,7 +419,9 @@ Index.html:
 </body>
 </html>
 ```
-Style.css:
+
+<h4>Style.css:</h4>
+
 ```
 .box {
   width: 150px;
@@ -420,6 +454,7 @@ Style.css:
   z-index: 1; /* Lowest stacking order */
 }
 ```
+
 <h4>z index</h4>
 
 However, the natural order of elements is as:
@@ -436,22 +471,27 @@ Learn More: How to Create Browser Specific CSS Code
 <h4>Syntax for CSS UI resizing</h4>
 
 It allows the element to be resized by the user and is most commonly found in text areas and div.
+
 ```
 selector {
   resize: value;
 }
-```
-Value: none, both, horizontal, or vertical.
 
-Syntax for CSS UI outline
+```
+
+<h4>Value: none, both, horizontal, or vertical.</h4>
+
+<h4>Syntax for CSS UI outline</h4>
 
 It is used to draw a line outside the element’s border for better focus.
+
 ```
 selector {
   outline: value;
 }
 ```
-Value: outline-width, outline-style, or outline-color.
+
+<h4>Value: outline-width, outline-style, or outline-color.</h4>
 
 <h3 id="CSS-Blend-Mode">CSS Blend Modes#</h3>
 This feature of CSS is inspired by photo editing software, where images are often blended to create a good composition and make it visually appealing.
@@ -460,30 +500,34 @@ CSS offers two blend modes to directly blend colours within the webpage.
 
 <h4>background-blend-mode</h4>
 It controls how multiple background layers blend.
+
 ```
 selector {
   mix-blend-mode: value;
 }
 ```
+
 Here value takes blending operations such as multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, and more.
 
-Mix-blend-mode
+<h4>Mix-blend-mode</h4>
 It controls how the content of an element blends with the content of its parent or sibling elements(or background).
+
 ```
 selector {
   background-blend-mode: value;
 }
 ```
+
 Here value takes the blending mode used between background layers such as overlay, screen, multiply, and more.
 
-CSS Transitions and Animations#
+<h4>CSS Transitions and Animations#</h4>
 CSS Transitions provide a change from one property to another over a specific duration rather than instantly, whereas CSS Animations set keyframes to animate transitions.
 
 Both are very powerful CSS features that create appealing visuals for a website.
 
-CSS Transitions Syntax
+<h4>CSS Transitions Syntax</h4>
 
-transition: property duration timing-function delay;
+<h4>transition: property duration timing-function delay;</h4>
 
 property: The CSS property you want to animate (e.g., background-color, width, height).
 duration: duration of transition (e.g., 1s for one second).
@@ -492,7 +536,8 @@ delay: Specifies the delay before the transition starts.
 
 Example: In this example, a blue box turns into green and scales up (size increases) when it is hovered, however, the transition property makes this change occur over 0.5s with an ease timing function.
 
-Index.html:
+<h4>Index.html:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -505,7 +550,9 @@ Index.html:
 </body>
 </html>
 ```
-Style.css:
+
+<h4>Style.css:</h4>
+
 ```
 .box {
   width: 100px;
@@ -519,11 +566,12 @@ Style.css:
 }
 ```
 
-translate GIF
+<h4>translate GIF</h4>
 
 <h4>CSS Animations Syntax</h4>
 
-1. @keyframes
+<h4>1. @keyframes</h4>
+
 ```
 @keyframes animation-name {
   0% { /* Starting state */ }
@@ -531,10 +579,13 @@ translate GIF
   100% { /* Ending state */ }
 }
 ```
-2. Animation Properties
+
+</h4>h4>2. Animation Properties</h4>
+
 ```
 animation: animation-name duration timing-function delay iteration-count direction;
 ```
+
 <ul>
   <li><b>animation-name</b>: Name of the animation defined by @keyframes.</li>
   <li><b>duration</b>: duration for the animation(e.g., 2s).</li>
@@ -543,11 +594,13 @@ animation: animation-name duration timing-function delay iteration-count directi
   <li><b>iteration-count</b>: Number of times the animation should run (infinite for continuous looping).</li>
   <li><b>direction</b>: The direction of the animation (normal, reverse, alternate, etc.).</li>
 </ul>
+
 <h4>Example:</h4>
 
 A simple example of a box moving horizontally and changing color.
 
 <h4>Index.html:</h4>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -559,7 +612,9 @@ A simple example of a box moving horizontally and changing color.
 </body>
 </html>
 ```
+
 <h4>Style.css:</h4>
+
 ```
 .box {
   width: 100px;
@@ -620,6 +675,7 @@ The primary concern behind knowing the best practices is to create an efficient 
 Here are some of the best Advanced CSS practices to maintain healthy and efficient coding:
 
 1. Use CSS variables for reusable values such as fonts, colors, and more.
+
 ```
 :root {
   --primary-color: #3498db;
@@ -634,11 +690,13 @@ button {
   background-color: var(--secondary-color);
 }
 ```
+
 2. To create layouts, prefer Flexbox and CSS grid as they align with the website’s responsiveness.
 
 3. As the number of mobile users is increasing rapidly, you must consider the mobile-first approach. According to this, you first design the website for mobile and then gradually expand to larger screens. This also creates good responsiveness on your website.
 4. Use animations and transitions appropriately and wisely. Although they enhance user experience, using them extensively slows down your website.
 5. Use CSS Shorthand to make your script more concise, and readable, and reduce the amount of code.
+
 ```
 margin-top: 10px;
 margin-right: 20px;
@@ -648,6 +706,7 @@ margin-left: 30px;
 /* Use this */
 margin: 10px 20px 15px 30px;
 ```
+
 Advanced CSS is a set of techniques that is built upon the foundation of basic CSS. It contains advanced techniques such as pseudo-classes, animations, and transitions that enhance both aesthetics and functionality, ultimately improving the user experience.
 
 Older browser versions don’t support many advanced CSS techniques. Therefore, to ensure maximum coverage, you must perform Cross-Browser Testing before launching your application for real-world users.
@@ -660,6 +719,7 @@ Older browser versions don’t support many advanced CSS techniques. Therefore, 
   <li><a href="https://www.browserstack.com/guide/tag/visual-testing">Visual Testing</a></li>
   <li><a href="https://www.browserstack.com/guide/tag/website-testing">Website Testing</a></li>
 </ul>
+
 ```
 ul.horizontal-list {
   display: flex;         /* Automatically aligns items in a row */
