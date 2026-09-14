@@ -2,6 +2,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~ README.md of CSS-Advanced for Adv-CSS.bauska.org ~~~~~~~~~~~~~~~~~~~~~-->
 <h1>CSS-Advanced</h1>
 <p>Folling is left frozen column</p>
+
 Table of Contents
 What is Advanced CSS?
 Why is Advanced CSS Important?
@@ -32,25 +33,25 @@ Advanced CSS Best practices
   </li>
   <li>2. Why is Advanced CSS Important for Modern Websites?
     <ul>
-      <li><p><em>Enhanced Interactivity</em>: Enables hover effects, focus states, and transitions for smoother user experiences.</p></li>
-	  <li><p><em>Improved Layouts</em>: Tools like Flexbox and Grid reduce reliance on JavaScript for responsive designs.</p></li>
-      <li><p><em>Better Performance</em>: Cleaner, modular code with reduced duplication improves maintainability.</p></li>
-      <li><p><em>Future-Proof Design</em>: Ensures compatibility with evolving browser capabilities and design standards.</p></li>
+      <li><p><b><i>Enhanced Interactivity</i></b>: Enables hover effects, focus states, and transitions for smoother user experiences.</p></li>
+	  <li><p><b><i>Improved Layouts</i></b>: Tools like Flexbox and Grid reduce reliance on JavaScript for responsive designs.</p></li>
+      <li><p><b><i>Better Performance</i></b>: Cleaner, modular code with reduced duplication improves maintainability.</p></li>
+      <li><p><b><i>Future-Proof Design</i></b>: Ensures compatibility with evolving browser capabilities and design standards.</p></li>
 	</ul>
   </li>
   <li>3. How to Use Advanced CSS Techniques Effectively?
     <ul>
-      <li><p><em>Pseudo-Classes</em>: Style elements in different states (:hover, :active, :focus, :first-child, :nth-child).</p></li>
-      <li><p><em>Pseudo-Elements</em>: Target specific parts of an element (::before, ::after, ::first-letter) for refined design control.</p></li>
-      <li><p><em>Transitions & Animations</em>: Add motion and interactivity to elements for a more engaging UI.</p></li>
-	  <li><p><em>Blend Modes & Z-Index</em>: Create layered effects and manage element stacking for complex visual designs.</p></li>
+      <li><p><b><i>Pseudo-Classes</i></b>: Style elements in different states (:hover, :active, :focus, :first-child, :nth-child).</p></li>
+      <li><p><b><i>Pseudo-Elements</i></b>: Target specific parts of an element (::before, ::after, ::first-letter) for refined design control.</p></li>
+      <li><p><b><i>Transitions & Animations</i></b>: Add motion and interactivity to elements for a more engaging UI.</p></li>
+	  <li><p><b><i>Blend Modes & Z-Index</i></b>: Create layered effects and manage element stacking for complex visual designs.</p></li>
 	</ul>
   </li>
   <li>4. Key Best Practices for Writing Advanced CSS
     <ul>
-      <li><p>Use <em>modular and reusable classes</em> to keep code maintainable.</p></li>
-      <li><p>Always <em>test browser compatibility</em> for advanced features.</p></li>
-      <li><p>Leverage <em>CSS variables</em> for consistent styling and easier updates.</p></li>
+      <li><p>Use <b><i>modular and reusable classes</i></b> to keep code maintainable.</p></li>
+      <li><p>Always <b><i>test browser compatibility</i></b> for advanced features.</p></li>
+      <li><p>Leverage <b><i>CSS variables</i></b> for consistent styling and easier updates.</p></li>
       <li><p>Combine advanced CSS with responsive design principles for seamless performance across devices.</p></li>
 	</ul>
   </li>
@@ -62,10 +63,10 @@ practices to follow for scalable, modern web design.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1">What is Advanced CSS?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>As the name suggests, <em>advanced CSS</em> is a set of styling techniques that go beyond a website’s basic styling capabilities 
+<p>As the name suggests, <b>advanced CSS</b> is a set of styling techniques that go beyond a website’s basic styling capabilities 
 such as fonts, colors, margins, and more.</p>
 
-<p>Whereas <em>advanced CSS</em> contains complex and advanced style design features such as pseudo-classes, animations, transitions, 
+<p>Whereas <b>advanced CSS</b> contains complex and advanced style design features such as pseudo-classes, animations, transitions, 
 and more that enhance aesthetics and functionality, ultimately improving the user experience.</p>
 
 <p>Incorporating advanced CSS into your projects enhances a website’s visuals, creates a scalable codebase, and improves its responsiveness.</p>
@@ -86,9 +87,9 @@ and more that enhance aesthetics and functionality, ultimately improving the use
 <h3>CSS Pseudo Classes#</h3>
 <p>CSS Pseudo Classes are a set of keywords that are used along <a href="https://www.browserstack.com/guide/css-selectors-in-selenium">CSS selectors</a> to style a dynamic state of an element.</p>
 
-<p>For example, you want to design a button. However, you want to ensure a slightly different design when the mouse hovers over the button and when it is clicked. In situations where you want to style the dynamic conditions of an element, <em>pseudo-classes</em> are used.</p>
+<p>For example, you want to design a button. However, you want to ensure a slightly different design when the mouse hovers over the button and when it is clicked. In situations where you want to style the dynamic conditions of an element, <b>pseudo-classes</b> are used.</p>
 
-<p>A pseudo-class consists of a <em>colon (:)</em> followed by the <em>pseudo-class name</em> (e.g., hover) and is attached to <em>anchor element</em> (e.g., button in case button: hover).</p>
+<p>A pseudo-class consists of a <b>colon (:)</b> followed by the <b>pseudo-class name</b> (e.g., hover) and is attached to <b>anchor element</b> (e.g., button in case button: hover).</p>
 
 <h4>Hover pseudo class</h4>
 <p>The hover pseudo-class applies styles when the mouse hovers over an element.</p>
@@ -155,43 +156,26 @@ To demonstrate, create a placeholder(input box), which changes its appearance wh
 Note that the effect restores to the original upon releasing the mouse button.
 ```
 input {
-
     padding: 10px;
-
     font-size: 16px;
-
     border: 2px solid #ccc;
-
     border-radius: 5px;
-
     transition: background-color 0.3s ease;
-
   }
-
   /* Styling the placeholder */
-
   input::placeholder {
-
     color: gray;
-
   }
-
-active pseudo class
-
+```
+<h4>active pseudo class</h4>
+```
 input:active::placeholder {
-
     color: red;
-
   }
-
   input:active {
-
     border-color: blue;
-
     background-color: #f0f8ff;
-
     outline: none;
-
   }
 ```
 active pseudo class 2
@@ -202,15 +186,10 @@ The first-child and last-child pseudo-classes are used to style the first and la
 Syntax:
 ```
 selector:first-child {
-
     /* styles */
-
   }
-
   selector:last-child {
-
     /* styles */
-
   }
 ```
 Example:
@@ -274,7 +253,7 @@ selector:focus {
     /* styles */
   }
 ```
-Example:
+<h4>Example:</h4>
 ```
 input {
     padding: 10px;
@@ -287,16 +266,16 @@ input {
     color: gray;
   }
 ```
-focus pseudo class e1730537153299
+<h4>focus pseudo class e1730537153299</h4>
 ```
 input:focus::placeholder {
-    color: rgb(60, 0, 255);
-  }
+  color: rgb(60, 0, 255);
+}
 input:focus {
-    border-color: rgb(255, 42, 0);
-    background-color: #f4ae95;
-    outline: none;
-  }
+  border-color: rgb(255, 42, 0);
+  background-color: #f4ae95;
+  outline: none;
+}
 ```
 focus pseudo class 2
 
@@ -306,8 +285,8 @@ The target pseudo-class allows you to style an element when the URL contains a h
 Syntax:
 ```
 selector:target {
-    /* styles */
-  }
+  /* styles */
+}
 ```
 Also Read: Top Responsive CSS Frameworks
 
@@ -322,17 +301,17 @@ The first-letter pseudo-element styles only the first letter of block-level text
 Syntax:
 ```
 selector::first-letter {
-    /* styles */
+  /* styles */
 }
 ```
 Example:
 ```
 p::first-letter {
-    font-size: 3em;  /* Make the first letter 3 times larger */
-    color: red;      /* Change its color to red */
-    font-weight: bold; /* Make it bold */
-    float: left;     /* Float the letter to the left */
-    margin-right: 5px; /* Add space between the letter and the rest of the text */
+  font-size: 3em;  /* Make the first letter 3 times larger */
+  color: red;      /* Change its color to red */
+  font-weight: bold; /* Make it bold */
+  float: left;     /* Float the letter to the left */
+  margin-right: 5px; /* Add space between the letter and the rest of the text */
 }
 ```
 first letter pseudo element
@@ -343,7 +322,7 @@ The before pseudo-element is used to insert content before the content of any el
 Syntax:
 ```
 selector::before {
-    /* styles or content */
+  /* styles or content */
 }
 ```
 Example:
@@ -353,21 +332,21 @@ Index.html:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pseudo-Elements </title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Pseudo-Elements </title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Pseudo Elements: BrowserStack</h1>
+  <h1>Pseudo Elements: BrowserStack</h1>
 </body>
 </html>
 ```
 Style.css:
 ```
 h1::before {
-    content: "★\A ";
-    color: gold;
-    font-size: 1.5em;
-    white-space: pre; }
+  content: "★\A ";
+  color: gold;
+  font-size: 1.5em;
+  white-space: pre; }
 ```
 before Pseudo element
 
@@ -383,7 +362,7 @@ It is used to manage overlapping elements, such as in designing a dropdown, a to
 Syntax:
 ```
 selector {
-    z-index: value;
+  z-index: value;
 }
 ```
 Here value can take inputs such as a positive number, a negative number, and an auto. Auto is the default value and follows the natural order of elements. Element with a higher value of Z-index will be at the top.
@@ -397,48 +376,48 @@ Index.html:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>z-index Example</title>
+  <title>z-index Example</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
 </body>
 </html>
 ```
 Style.css:
 ```
 .box {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    opacity: 0.9;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  opacity: 0.9;
 }
 .box1 {
-    background-color: red;
-    top: 50px;
-    left: 50px;
-    z-index: 4; /* Highest stacking order */
+  background-color: red;
+  top: 50px;
+  left: 50px;
+  z-index: 4; /* Highest stacking order */
 }
 .box2 {
-    background-color: blue;
-    top: 100px;
-    left: 100px;
-    z-index: 3; /* Higher stacking order */
+  background-color: blue;
+  top: 100px;
+  left: 100px;
+  z-index: 3; /* Higher stacking order */
 }
 .box3 {
-    background-color: green;
-    top: 150px;
-    left: 150px;
-    z-index: 2; /* High stacking order */
+  background-color: green;
+  top: 150px;
+  left: 150px;
+  z-index: 2; /* High stacking order */
 }
 .box4 {
-    background-color: black;
-    top: 200px;
-    left: 200px;
-    z-index: 1; /* Lowest stacking order */
+  background-color: black;
+  top: 200px;
+  left: 200px;
+  z-index: 1; /* Lowest stacking order */
 }
 ```
 <h4>z index</h4>
@@ -459,7 +438,7 @@ Learn More: How to Create Browser Specific CSS Code
 It allows the element to be resized by the user and is most commonly found in text areas and div.
 ```
 selector {
-    resize: value;
+  resize: value;
 }
 ```
 Value: none, both, horizontal, or vertical.
@@ -469,7 +448,7 @@ Syntax for CSS UI outline
 It is used to draw a line outside the element’s border for better focus.
 ```
 selector {
-    outline: value;
+  outline: value;
 }
 ```
 Value: outline-width, outline-style, or outline-color.
@@ -483,20 +462,18 @@ CSS offers two blend modes to directly blend colours within the webpage.
 It controls how multiple background layers blend.
 ```
 selector {
-    mix-blend-mode: value;
+  mix-blend-mode: value;
 }
 ```
 Here value takes blending operations such as multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, and more.
 
 Mix-blend-mode
 It controls how the content of an element blends with the content of its parent or sibling elements(or background).
-
+```
 selector {
-
-    background-blend-mode: value;
-
+  background-blend-mode: value;
 }
-
+```
 Here value takes the blending mode used between background layers such as overlay, screen, multiply, and more.
 
 CSS Transitions and Animations#
@@ -516,39 +493,30 @@ delay: Specifies the delay before the transition starts.
 Example: In this example, a blue box turns into green and scales up (size increases) when it is hovered, however, the transition property makes this change occur over 0.5s with an ease timing function.
 
 Index.html:
-
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <title>CSS Transition</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
   <div class="box"><h2>Hover Me</h2></div>
-
 </body>
-
 </html>
-
+```
 Style.css:
-
+```
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  .box:hover {
-    background-color: green;
-    transform: scale(1.2);
-  }
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.box:hover {
+  background-color: green;
+  transform: scale(1.2);
+}
 ```
 
 translate GIF
@@ -568,12 +536,12 @@ translate GIF
 animation: animation-name duration timing-function delay iteration-count direction;
 ```
 <ul>
-  <li><em>animation-name</em>: Name of the animation defined by @keyframes.</li>
-  <li><em>duration</em>: duration for the animation(e.g., 2s).</li>
-  <li><em>timing-function</em>: speed of the animation (ease, linear, ease-in, etc.).</li>
-  <li><em>delay</em>: Time before the animation starts (e.g., 1s).</li>
-  <li><em>iteration-count</em>: Number of times the animation should run (infinite for continuous looping).</li>
-  <li><em>direction</em>: The direction of the animation (normal, reverse, alternate, etc.).</li>
+  <li><b>animation-name</b>: Name of the animation defined by @keyframes.</li>
+  <li><b>duration</b>: duration for the animation(e.g., 2s).</li>
+  <li><b>timing-function</b>: speed of the animation (ease, linear, ease-in, etc.).</li>
+  <li><b>delay</b>: Time before the animation starts (e.g., 1s).</li>
+  <li><b>iteration-count</b>: Number of times the animation should run (infinite for continuous looping).</li>
+  <li><b>direction</b>: The direction of the animation (normal, reverse, alternate, etc.).</li>
 </ul>
 <h4>Example:</h4>
 
@@ -619,9 +587,9 @@ A simple example of a box moving horizontally and changing color.
 The animation runs for <b>3s</b>, with an <b>ease-in-out</b> timing with <b>alternate</b> back and forth and <b>infinite</b> running.
 
 <ul>
-  <li><em>At 0%</em>, the box has a red background at the leftmost part.</li>
-  <li><em>At 50%</em>, the box moves 150px right and turns green.</li>
-  <li><em>At 100%</em>, the box moves 300px right and turns blue.</li>
+  <li><b>At 0%</b>, the box has a red background at the leftmost part.</li>
+  <li><b>At 50%</b>, the box moves 150px right and turns green.</li>
+  <li><b>At 100%</b>, the box moves 300px right and turns blue.</li>
 </ul>
 
 After that, it repeats back and forth motion infinitely.
@@ -654,16 +622,16 @@ Here are some of the best Advanced CSS practices to maintain healthy and efficie
 1. Use CSS variables for reusable values such as fonts, colors, and more.
 ```
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --font-size-base: 16px;
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size-base: 16px;
 }
 body {
-    background-color: var(--primary-color);
-    font-size: var(--font-size-base);
+  background-color: var(--primary-color);
+  font-size: var(--font-size-base);
 }
 button {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 ```
 2. To create layouts, prefer Flexbox and CSS grid as they align with the website’s responsiveness.
@@ -694,8 +662,8 @@ Older browser versions don’t support many advanced CSS techniques. Therefore, 
 </ul>
 ```
 ul.horizontal-list {
-    display: flex;         /* Automatically aligns items in a row */
-    list-style-type: none; 
-    gap: 20px;             /* Easily sets the space between items */
+  display: flex;         /* Automatically aligns items in a row */
+  list-style-type: none; 
+  gap: 20px;             /* Easily sets the space between items */
 }
 ```
