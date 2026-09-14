@@ -66,19 +66,19 @@ Hover pseudo class
 The hover pseudo-class applies styles when the mouse hovers over an element.
 
 Syntax:
-
+```
 selector:hover {
 
     /* styles */
 
   }
-
+```
 Example:
 
 Consider an example where a button is created, and the pseudo-class is used to change its appearance when hovered.
 
 Index.html:
-
+```
 <!DOCTYPE html>
 
 <html>
@@ -96,9 +96,9 @@ Index.html:
 </body>
 
 </html>
-
+```
 Style.css:
-
+```
 .button{
 
     background-color: blue;
@@ -128,26 +128,26 @@ hover pseudo class
     background-color: red;
 
   }
-
+```
 hover pseudo class 2
 
 Active pseudo class
 The active pseudo-class is applied to an element when the user clicks (presses down) an element that has yet to be released.
 
 Syntax:
-
+```
 selector:active {
 
     /* styles */
 
   }
-
+```
 Example:
 
 To demonstrate, create a placeholder(input box), which changes its appearance when the user clicks on it.
 
 Note that the effect restores to the original upon releasing the mouse button.
-
+```
 input {
 
     padding: 10px;
@@ -187,14 +187,14 @@ input:active::placeholder {
     outline: none;
 
   }
-
+```
 active pseudo class 2
 
 First child and last child
 The first-child and last-child pseudo-classes are used to style the first and last-child elements within a parent container, respectively.
 
 Syntax:
-
+```
 selector:first-child {
 
     /* styles */
@@ -206,36 +206,25 @@ selector:first-child {
     /* styles */
 
   }
-
+```
 Example:
 
 To demonstrate, consider a scenario with multiple paragraph elements within a container, where only the first and last paragraphs need to be styled, leaving the rest unchanged.
-
+```
 <div>
-
     <p>This is the first paragraph.</p>
-
     <p>This is the second paragraph.</p>
-
     <p>This is the last paragraph.</p>
-
   </div>
-
-
+```
+```
   <style>
-
     p:first-child {
-
       color: red;
-
     }
-
     p:last-child {
-
       color: blue;
-
     }
-
   </style>
 
 first child and last child output image
@@ -244,107 +233,76 @@ Nth child()
 The nth-child() pseudo-class lets you select elements for styling based on their position with the parent element.
 
 Syntax:
-
+```
 selector:nth-child(n) {
-
     /* styles */
-
   }
-
+```
 Here, “n” takes values of the position of the children to select. It can take numeric values as well as a keyword such as odd and even.
 
 Example:
 
 To demonstrate, consider a scenario with multiple paragraph elements within a container, where only the third paragraph needs to be styled while the others remain unchanged.
-
+```
 <div>
-
     <p>This is the first paragraph.</p>
-
     <p>This is the middle paragraph.</p>
-
     <p>This is the last paragraph.</p>
-
   </div>
-
- 
-
+```
+```
   <style>
-
     p:nth-child(3){
-
       color: red;
-
     }
-
   </style>
-
+```
 Focus
 The focus pseudo-class lets you style elements when an element is focused through keyboard navigation or mouse clicks.
 
 Unlike the active pseudo-class, the mouse can be released and not pressed all the time. It is a helpful technique while designing form elements such as <input>, <textarea>, and <select>.
 
 Syntax:
-
+```
 selector:focus {
-
     /* styles */
-
   }
-
+```
 Example:
-
+```
 input {
-
     padding: 10px;
-
     font-size: 16px;
-
     border: 2px solid #ccc;
-
     border-radius: 5px;
-
   }
-
   /* Styling the placeholder */
-
   input::placeholder {
-
     color: gray;
-
   }
-
+```
 focus pseudo class e1730537153299
-
+```
 input:focus::placeholder {
-
     color: rgb(60, 0, 255);
-
   }
-
 input:focus {
-
     border-color: rgb(255, 42, 0);
-
     background-color: #f4ae95;
-
     outline: none;
-
   }
-
+```
 focus pseudo class 2
 
 Target
 The target pseudo-class allows you to style an element when the URL contains a hash (#) followed by the id of that element to be styled. This is often combined with anchor links to show or hide content dynamically.
 
 Syntax:
-
+```
 selector:target {
-
     /* styles */
-
   }
-
+```
 Also Read: Top Responsive CSS Frameworks
 
 CSS Pseudo-Elements#
@@ -356,83 +314,60 @@ First letter pseudo element
 The first-letter pseudo-element styles only the first letter of block-level text elements, such as paragraphs, headings, and other text-displaying content. It can’t be used for inline elements as it leverages elements’ ability to break lines for larger text formatting.
 
 Syntax:
-
+```
 selector::first-letter {
-
     /* styles */
-
 }
-
+```
 Example:
-
+```
 p::first-letter {
-
     font-size: 3em;  /* Make the first letter 3 times larger */
-
     color: red;      /* Change its color to red */
-
     font-weight: bold; /* Make it bold */
-
     float: left;     /* Float the letter to the left */
-
     margin-right: 5px; /* Add space between the letter and the rest of the text */
-
 }
-
+```
 first letter pseudo element
 
 before Pseudo element
 The before pseudo-element is used to insert content before the content of any element without altering its HTML structure.
 
 Syntax:
-
+```
 selector::before {
-
     /* styles or content */
-
 }
-
+```
 Example:
 
 Index.html:
-
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <title>Pseudo-Elements </title>
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-
     <h1>Pseudo Elements: BrowserStack</h1>
-
 </body>
-
 </html>
-
+```
 Style.css:
-
+```
 h1::before {
-
     content: "★\A ";
-
     color: gold;
-
     font-size: 1.5em;
-
     white-space: pre; }
-
+```
 before Pseudo element
 
 Also Read: How to position text over image using CSS
 
-CSS Z-Index#
+<h3 id="CSS-Z-Index">CSS Z-Index</h3>
 The Z-Index in CSS is a property used to control how the elements are stacked on a webpage. In simpler words, it ensures how elements are placed on top of one another.
 
 To place any aspect on top of another, the element must have a z-index value higher than that element to be placed below.
@@ -440,13 +375,11 @@ To place any aspect on top of another, the element must have a z-index value hig
 It is used to manage overlapping elements, such as in designing a dropdown, a tooltip, floating elements, dialogue boxes, and more.
 
 Syntax:
-
+```
 selector {
-
     z-index: value;
-
 }
-
+```
 Here value can take inputs such as a positive number, a negative number, and an auto. Auto is the default value and follows the natural order of elements. Element with a higher value of Z-index will be at the top.
 
 Example:
@@ -454,146 +387,99 @@ Example:
 In this example, let’s create four boxes and manage their stacking with the help of z-index.
 
 Index.html:
-
+```
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <title>z-index Example</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
     <div class="box box1"></div>
-
     <div class="box box2"></div>
-
     <div class="box box3"></div>
-
     <div class="box box4"></div>
-
 </body>
-
 </html>
-
+```
 Style.css:
-
+```
 .box {
-
     width: 150px;
-
     height: 150px;
-
     position: absolute;
-
     opacity: 0.9;
-
 }
-
 .box1 {
-
     background-color: red;
-
     top: 50px;
-
     left: 50px;
-
     z-index: 4; /* Highest stacking order */
-
 }
-
 .box2 {
-
     background-color: blue;
-
     top: 100px;
-
     left: 100px;
-
     z-index: 3; /* Higher stacking order */
-
 }
-
 .box3 {
-
     background-color: green;
-
     top: 150px;
-
     left: 150px;
-
     z-index: 2; /* High stacking order */
-
 }
-
 .box4 {
-
     background-color: black;
-
     top: 200px;
-
     left: 200px;
-
     z-index: 1; /* Lowest stacking order */
-
 }
-
-z index
+```
+<h4>z index</h4>
 
 However, the natural order of elements is as:
 
-Z index natural
+<h4>Z index natural</h4>
 
-What is CSS User Interface?#
+<h3 id="What-is-CSS-UI">What is CSS User Interface?</h3>
 CSS User Interface contains several properties that allow control of the behavior and appearance of user interface elements on a webpage. CSS provides many user interface features, such as resizing elements, outlines, box-sizing, and more.
 
 Resize and Outline-offset are the most common and important CSS UI features.
 
 Learn More: How to Create Browser Specific CSS Code
 
-Syntax for CSS UI resizing
+<h4>Syntax for CSS UI resizing</h4>
 
 It allows the element to be resized by the user and is most commonly found in text areas and div.
-
+```
 selector {
-
     resize: value;
-
 }
-
+```
 Value: none, both, horizontal, or vertical.
 
 Syntax for CSS UI outline
 
 It is used to draw a line outside the element’s border for better focus.
-
+```
 selector {
-
     outline: value;
-
 }
-
+```
 Value: outline-width, outline-style, or outline-color.
 
-CSS Blend Modes#
+<h3 id="CSS-Blend-Mode">CSS Blend Modes#</h3>
 This feature of CSS is inspired by photo editing software, where images are often blended to create a good composition and make it visually appealing.
 
 CSS offers two blend modes to directly blend colours within the webpage.
 
-background-blend-mode
+<h4>background-blend-mode</h4>
 It controls how multiple background layers blend.
-
+```
 selector {
-
     mix-blend-mode: value;
-
 }
-
+```
 Here value takes blending operations such as multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, and more.
 
 Mix-blend-mode
