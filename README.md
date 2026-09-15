@@ -3,18 +3,19 @@
 <h1>CSS-Advanced</h1>
 <p>Folling is left frozen column</p>
 
-Table of Contents
-What is Advanced CSS?
-Why is Advanced CSS Important?
-CSS Pseudo classes
-CSS Pseudo elements
-CSS Z-Index
-What is CSS User Interface?
-CSS Blend modes
-CSS Transitions and animations
-Browser Compatibility of Advanced CSS
-Advanced CSS Best practices
-
+<h2>Table of Contents</h2>
+<ul>
+  <li>What is Advanced CSS?</li>
+  <li>Why is Advanced CSS Important?</li>
+  <li>CSS Pseudo classes</li>
+  <li>CSS Pseudo elements</li>
+  <li>CSS Z-Index</li>
+  <li>What is CSS User Interface?</li>
+  <li>CSS Blend modes</li>
+  <li>CSS Transitions and animations</li>
+  <li>Browser Compatibility of Advanced CSS</li>
+  <li>Advanced CSS Best practices</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><a href="https://www.browserstack.com/guide/advanced-css-tutorial">from Browserstack's Advanced CSS Tutorial</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -175,7 +176,9 @@ input::placeholder {
   color: gray;
 }
 ```
+
 <h4>active pseudo class</h4>
+
 ```
 input:active::placeholder {
   color: red;
@@ -186,12 +189,14 @@ input:active {
   outline: none;
 }
 ```
+
 active pseudo class 2
 
 First child and last child
 The first-child and last-child pseudo-classes are used to style the first and last-child elements within a parent container, respectively.
 
 Syntax:
+
 ```
 selector:first-child {
   /* styles */
@@ -200,6 +205,7 @@ selector:last-child {
   /* styles */
 }
 ```
+
 Example:
 
 To demonstrate, consider a scenario with multiple paragraph elements within a container, where only the first and last paragraphs need to be styled, leaving the rest unchanged.
@@ -231,6 +237,7 @@ selector:nth-child(n) {
   /* styles */
 }
 ```
+
 Here, “n” takes values of the position of the children to select. It can take numeric values as well as a keyword such as odd and even.
 
 <h4>Example:</h4>
@@ -542,8 +549,8 @@ Example: In this example, a blue box turns into green and scales up (size increa
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Transition</title>
-<link rel="stylesheet" href="style.css">
+  <title>CSS Transition</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="box"><h2>Hover Me</h2></div>
