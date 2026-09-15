@@ -147,7 +147,9 @@ selector:hover {
 <h4>hover pseudo class 2</h4>
 
 <h3>Active pseudo class</h3>
-The active pseudo-class is applied to an element when the user clicks (presses down) an element that has yet to be released.
+
+<p>The active pseudo-class is applied to an element when the user clicks (presses down) an element 
+that has yet to be released.</p>
 
 <h4>Syntax:</h4>
 
@@ -159,9 +161,9 @@ selector:active {
 
 <h4>Example:</h4>
 
-To demonstrate, create a placeholder(input box), which changes its appearance when the user clicks on it.
+<p>To demonstrate, create a placeholder(input box), which changes its appearance when the user clicks on it.</p>
 
-Note that the effect restores to the original upon releasing the mouse button.
+<p>Note that the effect restores to the original upon releasing the mouse button.</p>
 
 ```
 input {
@@ -190,10 +192,12 @@ input:active {
 }
 ```
 
-active pseudo class 2
+<h4>active pseudo class 2</h4>
 
-First child and last child
-The first-child and last-child pseudo-classes are used to style the first and last-child elements within a parent container, respectively.
+<h4>First child and last child</h4>
+
+<p>The first-child and last-child pseudo-classes are used to style the first and last-child elements 
+within a parent container, respectively.</p>
 
 Syntax:
 
@@ -228,7 +232,8 @@ To demonstrate, consider a scenario with multiple paragraph elements within a co
 first child and last child output image
 
 <h3>Nth child()</h3>
-The nth-child() pseudo-class lets you select elements for styling based on their position with the parent element.
+<p>The nth-child() pseudo-class lets you select elements for styling based on their position with the 
+parent element.</p>
 
 <h4>Syntax:</h4>
 
@@ -238,11 +243,13 @@ selector:nth-child(n) {
 }
 ```
 
-Here, “n” takes values of the position of the children to select. It can take numeric values as well as a keyword such as odd and even.
+<p>Here, “n” takes values of the position of the children to select. It can take numeric values as 
+well as a keyword such as odd and even.</p>
 
 <h4>Example:</h4>
 
-To demonstrate, consider a scenario with multiple paragraph elements within a container, where only the third paragraph needs to be styled while the others remain unchanged.
+<p>To demonstrate, consider a scenario with multiple paragraph elements within a container, where 
+only the third paragraph needs to be styled while the others remain unchanged.</p>
 
 ```
 <div>
@@ -258,9 +265,13 @@ To demonstrate, consider a scenario with multiple paragraph elements within a co
 ```
 
 <h4>Focus</h4>
-The focus pseudo-class lets you style elements when an element is focused through keyboard navigation or mouse clicks.
 
-Unlike the active pseudo-class, the mouse can be released and not pressed all the time. It is a helpful technique while designing form elements such as <input>, <textarea>, and <select>.
+<p>The focus pseudo-class lets you style elements when an element is focused through keyboard 
+navigation or mouse clicks.</p>
+
+<p>Unlike the active pseudo-class, the mouse can be released and not pressed all the time. It is a 
+helpful technique while designing form elements such as &lt;input&gt;, &lt;textarea&gt;, and 
+&lt;select&gt;.</p>
 
 <h4>Syntax:</h4>
 
@@ -301,7 +312,10 @@ input:focus {
 <h4>focus pseudo class 2</h4>
 
 <h3>Target</h3>
-The target pseudo-class allows you to style an element when the URL contains a hash (#) followed by the id of that element to be styled. This is often combined with anchor links to show or hide content dynamically.
+
+<p>The target pseudo-class allows you to style an element when the URL contains a hash (#) followed 
+by the id of that element to be styled. This is often combined with anchor links to show or hide 
+content dynamically.</p>
 
 <h4>Syntax:</h4>
 
@@ -311,17 +325,22 @@ selector:target {
 }
 ```
 
-Also Read: Top Responsive CSS Frameworks
+<p>Also Read: Top Responsive CSS Frameworks</p>
 
 <h3>CSS Pseudo-Elements#</h3>
 
-Pseudo-elements in CSS are also special keywords in CSS tusing which you can style specific parts of an element without changing the underlying HTML structure. Unlike Pseudo classes that style different states or conditions of an element, the CSS pseudo-elements style part of an element and can also insert, remove, and modify an element without changing the HTML structure.
+<p>Pseudo-elements in CSS are also special keywords in CSS tusing which you can style specific parts 
+of an element without changing the underlying HTML structure. Unlike Pseudo classes that style 
+different states or conditions of an element, the CSS pseudo-elements style part of an element and 
+can also insert, remove, and modify an element without changing the HTML structure.</p>
 
-CSS pseudo-element consists of a double colon (::) followed by the pseudo-element keyword(e.g., h1::before).
+<p>CSS pseudo-element consists of a double colon (::) followed by the pseudo-element keyword(e.g., h1::before).</p>
 
 <h4>First letter pseudo element</h4>
 
-The first-letter pseudo-element styles only the first letter of block-level text elements, such as paragraphs, headings, and other text-displaying content. It can’t be used for inline elements as it leverages elements’ ability to break lines for larger text formatting.
+<p>The first-letter pseudo-element styles only the first letter of block-level text elements, such 
+as paragraphs, headings, and other text-displaying content. It can’t be used for inline elements 
+as it leverages elements’ ability to break lines for larger text formatting.</p>
 
 <h4>Syntax:</h4>
 
@@ -347,7 +366,8 @@ p::first-letter {
 
 <h4>before Pseudo element</h4>
 
-The before pseudo-element is used to insert content before the content of any element without altering its HTML structure.
+<p>The before pseudo-element is used to insert content before the content of any element without 
+altering its HTML structure.</p>
 
 <h4>Syntax:</h4>
 
@@ -386,14 +406,18 @@ h1::before {
 
 <h4>before Pseudo element</h4>
 
-Also Read: How to position text over image using CSS
+<p>Also Read: How to position text over image using CSS</p>
 
 <h3 id="CSS-Z-Index">CSS Z-Index</h3>
-The Z-Index in CSS is a property used to control how the elements are stacked on a webpage. In simpler words, it ensures how elements are placed on top of one another.
 
-To place any aspect on top of another, the element must have a z-index value higher than that element to be placed below.
+<p>The Z-Index in CSS is a property used to control how the elements are stacked on a webpage. In 
+simpler words, it ensures how elements are placed on top of one another.</p>
 
-It is used to manage overlapping elements, such as in designing a dropdown, a tooltip, floating elements, dialogue boxes, and more.
+<p>To place any aspect on top of another, the element must have a z-index value higher than that 
+element to be placed below.</p>
+
+<p>It is used to manage overlapping elements, such as in designing a dropdown, a tooltip, floating 
+elements, dialogue boxes, and more.</p>
 
 <h4>Syntax:</h4>
 
@@ -403,11 +427,13 @@ selector {
 }
 ```
 
-Here value can take inputs such as a positive number, a negative number, and an auto. Auto is the default value and follows the natural order of elements. Element with a higher value of Z-index will be at the top.
+<p>Here value can take inputs such as a positive number, a negative number, and an auto. Auto is the 
+default value and follows the natural order of elements. Element with a higher value of Z-index will 
+be at the top.</p>
 
 <h4>Example:</h4>
 
-In this example, let’s create four boxes and manage their stacking with the help of z-index.
+<p>In this example, let’s create four boxes and manage their stacking with the help of z-index.</p>
 
 <h4>Index.html:</h4>
 
